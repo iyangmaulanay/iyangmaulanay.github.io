@@ -22,7 +22,7 @@
 
 /* logo */
 i.fab {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 
@@ -30,12 +30,12 @@ i.fab {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     color: #fff;
     background: #007BFF;
     transition: .5s;
-    font-size: 30px;
+    font-size: 25px;
 
 }
 
@@ -57,14 +57,14 @@ i.fab {
     height: 100%;
     transition: all 0.4s ease 0s;
     transform: translateX(250px);
-    background: green;
     border-left: 1px solid rgba(255, 255, 255, 0.1);
+    background-image: linear-gradient(130deg, rgb(0, 71, 224), rgb(151, 175, 255));
     z-index: 999;
 }
 
 #sidebar-wrapper.active {
     right: 250px;
-    width: 100%;
+    width: 60%;
     transition: all 0.4s ease 0s;
     z-index: 999;
 }
@@ -83,7 +83,8 @@ i.fab {
     display: block;
     text-decoration: none;
     color: #fff;
-    padding: 15px;
+    padding: 10px;
+    font-weight: 400;
 }
 
 .sidebar-nav li a:hover {
@@ -100,11 +101,9 @@ i.fab {
 .sidebar-nav>.sidebar-brand {
     font-size: 1.2rem;
     background: rgba(52, 58, 64, 0.1);
-    height: 80px;
+    height: 70px;
     line-height: 50px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 15px;
+    padding: 10px;
 }
 
 .sidebar-nav>.sidebar-brand a {
@@ -118,27 +117,25 @@ i.fab {
 
 
 /*go to top*/
+
 .scroll-to-top {
     position: fixed;
     right: 15px;
     bottom: 15px;
     display: none;
-    width: 50px;
-    height: 50px;
     text-align: center;
-    color: white;
-    background: #007BFF;
+    color: #007BFF;
     line-height: 45px;
     font-size: 30px;
 }
 
 .scroll-to-top:focus,
 .scroll-to-top:hover {
-    color: white;
+    color: #0170e6;
 }
 
 .scroll-to-top:hover {
-    background: #0170e6;
+
     transition: .5s;
 }
 
@@ -153,6 +150,11 @@ i.fab {
         right: 250px;
         width: 250px;
         transition: all 0.4s ease 0s;
+    }
+
+    /*go to top*/
+    .scroll-to-top {
+        right: 40px;
     }
 
 
