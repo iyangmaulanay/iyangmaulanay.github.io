@@ -1,0 +1,139 @@
+.page-section {
+    padding: 5rem 0;
+}
+
+/* jumbotron*/
+#carouselExampleFade img {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+}
+
+
+
+/* Main Nav */
+#mainNav {
+    padding: 7px;
+}
+
+#mainNav li:nth-child(1) {
+    margin-top: 15px;
+    border-top: 0px;
+}
+
+#mainNav li {
+    border-top: 1px solid #dadce0;
+    padding-top: 3px;
+}
+
+#mainNav .navbar-brand {
+    text-transform: none;
+}
+
+#mainNav .navbar-toggler:active {
+    background-color: #af9226;
+    transition: 1s;
+}
+
+#mainNav .navbar-toggler {
+    padding: 5px 10px 5px 10px;
+}
+
+#mainNav {
+    background: linear-gradient(130deg, rgb(143, 143, 143), rgba(146, 146, 146, 0.185));
+    transition: .5s;
+    box-shadow:
+        0 4px 18px 0 #adadad6c,
+        0 7px 10px -5px rgba(175, 175, 175, 0.295),
+        inset 0 -1px 0 0 #dadce0;
+}
+
+#mainNav.navbar-shrink {
+    transition: .5s;
+    background-color: #212529dc;
+}
+
+#mainNav i.fab {
+    font-size: 30px;
+}
+
+#mainNav {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+#mainNav.hide {
+    transform: translateY(-60px);
+    transition: .5s;
+}
+
+#mainNav.show {
+    transform: translateY(0);
+    z-index: 999;
+}
+
+/*go to top*/
+div.goTop {
+    display: none;
+    margin-bottom: 40px;
+    width: 40px;
+    margin-right: 5px;
+}
+
+.fa-arrow-up {
+    transition: .5s;
+    padding: 5px;
+    color: #fed136;
+}
+
+.fa-arrow-up:hover {
+    color: #fed136;
+}
+
+.fa-arrow-up:active {
+    color: #af9226;
+}
+
+/* spesific-view desktop*/
+@media (min-width: 768px) {
+    div.goTop {
+        margin-right: 30px;
+    }
+
+    .navbar-shrink {
+        box-shadow: inset 0 -1px 0 0 #dadce0;
+    }
+
+    .fa-arrow-up:hover {
+        color: #e9c133
+    }
+
+    #mainNav.hide {
+        transform: translateY(0);
+    }
+
+    #mainNav.show {
+        transform: translateY(0);
+    }
+
+    #mainNav li:nth-child(1) {
+        margin-top: 0;
+    }
+
+    #mainNav li {
+        box-shadow: none;
+        border-top: 0;
+    }
+
+
+    #mainNav {
+        padding: 15px;
+    }
+
+    #mainNav.navbar-shrink {
+        padding: 7px;
+    }
+}
+
+/* akhir go top */

@@ -1,0 +1,1 @@
+https://api.whatsapp.com/send?phone=6282291060009&text=Selamat%20pagi
