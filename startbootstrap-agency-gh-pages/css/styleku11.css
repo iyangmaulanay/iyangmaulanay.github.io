@@ -1,9 +1,22 @@
+/* text selection color */
+::-moz-selection {
+    background: rgb(18, 141, 255);
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background: rgb(18, 141, 255);
+    color: #fff;
+    text-shadow: none;
+}
+
 .page-section {
     padding: 5rem 0;
 }
 
 /* jumbotron*/
-#carouselExampleFade img {
+#carouselExampleControls img {
     width: 100%;
     height: 650px;
     object-fit: cover;
@@ -55,10 +68,10 @@ i.fab {
     right: 0;
     width: 250px;
     height: 100%;
-    transition: all 0.4s ease 0s;
+    transition: all 0.5s ease 0s;
     transform: translateX(250px);
     border-left: 1px solid rgba(255, 255, 255, 0.1);
-    background-image: linear-gradient(to bottom, rgb(82, 82, 255), rgba(255, 255, 255, 0));
+    background-image: linear-gradient(to bottom, rgb(82, 82, 255), rgba(82, 82, 255, 0.801), rgba(255, 255, 255, 0));
     z-index: 999;
 }
 
@@ -85,6 +98,7 @@ i.fab {
     color: #fff;
     padding: 10px 0px 10px 20px;
     font-weight: 400;
+    font-size: 20px;
 
 }
 
@@ -105,6 +119,7 @@ i.fab {
     height: 70px;
     line-height: 50px;
     padding: 10px 0px 10px 20px;
+    font-size: 23px;
 }
 
 .sidebar-nav>.sidebar-brand a {
@@ -144,8 +159,8 @@ i.fab {
 }
 
 /* carousel control button */
-#carouselExampleFade .carousel-control-prev,
-#carouselExampleFade .carousel-control-next {
+#carouselExampleControls .carousel-control-prev,
+#carouselExampleControls .carousel-control-next {
     display: none;
 }
 
@@ -165,9 +180,16 @@ i.fab {
     }
 
     /* carousel control button */
-    #carouselExampleFade .carousel-control-prev,
-    #carouselExampleFade .carousel-control-next {
+    #carouselExampleControls .carousel-control-prev,
+    #carouselExampleControls .carousel-control-next {
         display: flex;
     }
 
+    .sidebar-nav li.sidebar-nav-item a {
+        font-size: 15px;
+    }
+
+    .sidebar-nav>.sidebar-brand {
+        font-size: 18px;
+    }
 }
