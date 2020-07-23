@@ -30,7 +30,12 @@
  */
 .container-nav {
     z-index: 1000;
-    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding: 10px 0px 10px 20px;
+    font-size: 23px;
+    background: none;
 }
 
 /* logo */
@@ -45,8 +50,10 @@ i.fab {
     align-items: center;
     width: 40px;
     height: 40px;
+    margin-right: 15px;
+    margin-top: 5px;
     color: #fff;
-    background: #007BFF;
+    background-image: linear-gradient(to bottom, rgb(82, 82, 255), rgba(82, 82, 255, 0.801));
     transition: .5s;
     font-size: 25px;
 
@@ -58,7 +65,7 @@ i.fab {
 }
 
 .menu-toggle:hover {
-    background: #0170e6;
+    background: rgb(95, 95, 252);
     transition: .5s;
     text-decoration: none;
 }
@@ -78,7 +85,7 @@ i.fab {
 #sidebar-wrapper.active {
     right: 250px;
     width: 100%;
-    transition: all 0.4s ease 0s;
+    transition: all 0.5s ease 0s;
     z-index: 999;
 }
 
@@ -140,14 +147,14 @@ i.fab {
     bottom: 15px;
     display: none;
     text-align: center;
-    color: #007BFF;
+    color: rgb(95, 95, 252);
     line-height: 45px;
     font-size: 30px;
 }
 
 .scroll-to-top:focus,
 .scroll-to-top:hover {
-    color: #0170e6;
+    color: rgb(82, 82, 212);
 }
 
 .scroll-to-top:hover {
@@ -164,14 +171,24 @@ i.fab {
     display: none;
 }
 
+/* navbar toggler hidden at mobile */
+.navbar-toggler {
+    display: none;
+}
+
+/* navbar brand hidden at mobile */
+.container-nav .navbar-brand {
+    display: none;
+}
 
 /* spesific-view desktop*/
 @media (min-width: 768px) {
 
     #sidebar-wrapper.active {
+        display: none;
         right: 250px;
         width: 250px;
-        transition: all 0.4s ease 0s;
+        transition: all 0.5s ease 0s;
     }
 
     /*go to top*/
@@ -192,4 +209,44 @@ i.fab {
     .sidebar-nav>.sidebar-brand {
         font-size: 18px;
     }
+
+    /* menu toggle hidden at desktop */
+    .menu-toggle {
+        display: none;
+    }
+
+    /* container nav */
+    .container-nav {
+        background-image: linear-gradient(to bottom, rgb(82, 82, 255), rgba(82, 82, 255, 0.801));
+        box-shadow:
+            0 2px 15px 0 #2859c26c,
+            0 5px 7px -5px rgba(76, 78, 216, 0.295);
+        height: 50px;
+        line-height: 50px;
+        font-size: 15px;
+        padding: 0 60px 0 60px;
+    }
+
+    .container-nav a {
+        padding: 0;
+    }
+
+
+
+    /* navbar brand show at mobile */
+    .container-nav .navbar-brand {
+        display: inline;
+    }
+
+    .collapse li a {
+        color: #fff;
+        padding-right: 10px;
+        text-decoration: none;
+    }
+
+    .collapse li a:hover {
+        color: rgb(228, 228, 228);
+    }
 }
+
+/* desktop */
