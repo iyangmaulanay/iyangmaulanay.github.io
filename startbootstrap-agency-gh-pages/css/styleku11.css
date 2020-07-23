@@ -58,13 +58,13 @@ i.fab {
     transition: all 0.4s ease 0s;
     transform: translateX(250px);
     border-left: 1px solid rgba(255, 255, 255, 0.1);
-    background-image: linear-gradient(130deg, rgb(0, 71, 224), rgb(151, 175, 255));
+    background-image: linear-gradient(to bottom, rgb(82, 82, 255), rgba(255, 255, 255, 0));
     z-index: 999;
 }
 
 #sidebar-wrapper.active {
     right: 250px;
-    width: 60%;
+    width: 100%;
     transition: all 0.4s ease 0s;
     z-index: 999;
 }
@@ -83,8 +83,9 @@ i.fab {
     display: block;
     text-decoration: none;
     color: #fff;
-    padding: 10px;
+    padding: 10px 0px 10px 20px;
     font-weight: 400;
+
 }
 
 .sidebar-nav li a:hover {
@@ -103,7 +104,7 @@ i.fab {
     background: rgba(52, 58, 64, 0.1);
     height: 70px;
     line-height: 50px;
-    padding: 10px;
+    padding: 10px 0px 10px 20px;
 }
 
 .sidebar-nav>.sidebar-brand a {
@@ -135,13 +136,19 @@ i.fab {
 }
 
 .scroll-to-top:hover {
-
     transition: .5s;
 }
 
 .scroll-to-top i {
     font-weight: 800;
 }
+
+/* carousel control button */
+#carouselExampleFade .carousel-control-prev,
+#carouselExampleFade .carousel-control-next {
+    display: none;
+}
+
 
 /* spesific-view desktop*/
 @media (min-width: 768px) {
@@ -157,5 +164,10 @@ i.fab {
         right: 40px;
     }
 
+    /* carousel control button */
+    #carouselExampleFade .carousel-control-prev,
+    #carouselExampleFade .carousel-control-next {
+        display: flex;
+    }
 
 }
