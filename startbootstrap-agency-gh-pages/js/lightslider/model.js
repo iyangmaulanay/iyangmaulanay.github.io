@@ -19,7 +19,7 @@ $(document).ready(function () {
             {
                 breakpoint: 576,
                 settings: {
-                    verticalHeight: 200,
+                    verticalHeight: 300,
                     vThumbWidth: 60,
                     thumbItem: 4,
                 }
